@@ -1,0 +1,5 @@
+package com.seu.cdu.service;
+
+public interface ItemService {
+
+}

@@ -1,0 +1,14 @@
+package com.seu.cdu.service.impl;
+
+import com.seu.cdu.service.ItemService;
+import com.seu.edu.pojo.TbItem;
+
+public class ItemServiceImpl implements ItemService {
+
+	@Override
+	public TbItem getItemById(long itemId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

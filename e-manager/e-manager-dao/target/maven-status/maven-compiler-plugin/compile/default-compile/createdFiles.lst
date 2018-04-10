@@ -1,0 +1,11 @@
+com/seu/edu/mapper/TbContentMapper.class
+com/seu/edu/mapper/TbItemDescMapper.class
+com/seu/edu/mapper/TbOrderShippingMapper.class
+com/seu/edu/mapper/TbItemMapper.class
+com/seu/edu/mapper/TbContentCategoryMapper.class
+com/seu/edu/mapper/TbItemCatMapper.class
+com/seu/edu/mapper/TbOrderItemMapper.class
+com/seu/edu/mapper/TbOrderMapper.class
+com/seu/edu/mapper/TbUserMapper.class
+com/seu/edu/mapper/TbItemParamItemMapper.class
+com/seu/edu/mapper/TbItemParamMapper.class
