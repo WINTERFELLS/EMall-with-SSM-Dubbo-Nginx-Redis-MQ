@@ -44,6 +44,21 @@
 		<list key="issueManagementUrl">
 		</list>
 	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="/home/dpf/eclipse/e-mall/pagehelper-fix"/>
+			<item value="/media/dpf/9EBAAADBBAAAAEE9/web/e3商城_day01/黑马32期/01.教案-3.0/01.参考资料/mybatis/pagehelper-fix/pagehelper"/>
+			<item value="/home/dpf/eclipse/e-mall/e-manager-web"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
 	<section name="MavenProjectWizardArchetypePage">
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
