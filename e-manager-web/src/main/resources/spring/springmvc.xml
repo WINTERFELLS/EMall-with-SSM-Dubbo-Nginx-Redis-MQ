@@ -21,8 +21,18 @@
 	<dubbo:application name="e-manager-web"/>
 	<dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" />	
 	<dubbo:reference interface="com.seu.edu.service.ItemService" id="itemService" />
+	<dubbo:reference interface="com.seu.edu.service.ItemCatService" id="itemCatService" />
 	
 	<!-- 资源映射 -->
 	<mvc:resources location="/css/" mapping="/css/**"></mvc:resources>
 	<mvc:resources location="/js/" mapping="/js/**"></mvc:resources>
+	
+	<!-- 定义文件上传解析器 -->
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!-- 设定默认编码 -->
+		<property name="defaultEncoding" value="UTF-8"></property>
+		<!-- 设定文件上传的最大值5MB，5*1024*1024 -->
+		<property name="maxUploadSize" value="5242880"></property>
+	</bean>
 </beans>

@@ -1,5 +1,6 @@
 package com.seu.edu.service.impl;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,8 +9,12 @@ import org.springframework.stereotype.Service;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.seu.edu.common.pojo.EasyUIDataGridResult;
+import com.seu.edu.common.utils.EResult;
+import com.seu.edu.common.utils.IDUtils;
+import com.seu.edu.mapper.TbItemDescMapper;
 import com.seu.edu.mapper.TbItemMapper;
 import com.seu.edu.pojo.TbItem;
+import com.seu.edu.pojo.TbItemDesc;
 import com.seu.edu.pojo.TbItemExample;
 import com.seu.edu.pojo.TbItemExample.Criteria;
 import com.seu.edu.service.ItemService;
@@ -19,6 +24,9 @@ public class ItemServiceImpl implements ItemService {
 
 	@Autowired
 	private TbItemMapper itemMapper;
+	
+	@Autowired
+	private TbItemDescMapper itemDescMapper;
 	
 	@Override
 	public TbItem getItemById(long itemId) {
@@ -56,5 +64,27 @@ public class ItemServiceImpl implements ItemService {
 		long total = pageInfo.getTotal();
 		result.setTotal(total);
 		return result;
+	}
+
+	@Override
+	public EResult addItem(TbItem item, String desc) {
+		//生成商品id
+		Long itemId = IDUtils .genItemId();
+		//补全item属性
+		item.setId(itemId);
+		item.setStatus((byte)1);
+		item.setCreated(new Date());
+		item.setUpdated(new Date());
+		//商品标插入数据
+		itemMapper.insert(item);
+		//商品描述表插入数据
+		TbItemDesc itemDesc = new TbItemDesc();
+		itemDesc.setItemId(itemId);
+		itemDesc.setItemDesc(desc);
+		itemDesc.setCreated(new Date());
+		itemDesc.setUpdated(new Date());
+		itemDescMapper.insert(itemDesc);
+		
+		return EResult.ok();
 	}
 }
