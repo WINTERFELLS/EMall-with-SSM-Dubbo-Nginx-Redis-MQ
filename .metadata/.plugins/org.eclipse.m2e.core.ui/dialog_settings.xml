@@ -7,18 +7,11 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="e-manager-web"/>
-			<item value="e-manager"/>
-			<item value="e-manager-service"/>
-			<item value="e-manager-interface"/>
-			<item value="e-manager-dao"/>
-			<item value="e-manager-pojo"/>
+			<item value="e-content-service"/>
+			<item value="e-content"/>
+			<item value="e-content-interface"/>
 			<item value="e-parent"/>
-			<item value="e-common"/>
-			<item value="common"/>
-			<item value="parent"/>
-			<item value="e3-common"/>
-			<item value="e3-parent"/>
+			<item value="e-content-services"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -43,6 +36,12 @@
 		</list>
 		<list key="issueManagementUrl">
 		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.MavenProjectSelectionDialog">
+		<item value="480" key="width"/>
+		<item value="2382" key="x"/>
+		<item value="278" key="y"/>
+		<item value="498" key="height"/>
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
@@ -71,6 +70,9 @@
 	</section>
 	<section name="MavenModuleWizardParentPage">
 		<list key="moduleName">
+			<item value="e-content-service"/>
+			<item value="e-content-interface"/>
+			<item value="e-content-services"/>
 			<item value="e-manager-web"/>
 			<item value="e-manager-service"/>
 			<item value="e-manager-interface"/>
@@ -88,6 +90,9 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/home/dpf/eclipse/e-mall/e-parent/pom.xml"/>
+			<item value="/home/dpf/eclipse/e-mall/e-portal-web"/>
+			<item value="/home/dpf/eclipse/e-mall/e-manager-web"/>
 			<item value="/home/dpf/eclipse/e-mall/e-common/target"/>
 			<item value="/home/dpf/eclipse/e-mall/parent"/>
 			<item value="/home/dpf/eclipse/e-mall/e3-parent"/>
@@ -103,13 +108,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="org.e.manager.web"/>
+			<item value="org.e.content.service"/>
 		</list>
 		<list key="groupId">
 			<item value="com.seu.edu"/>
 		</list>
 		<list key="artifactId">
-			<item value="e-manager-web"/>
+			<item value="e-content-service"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

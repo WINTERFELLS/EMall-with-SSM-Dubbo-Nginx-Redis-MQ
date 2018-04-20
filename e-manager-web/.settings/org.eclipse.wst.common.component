@@ -13,6 +13,9 @@
         <dependent-module archiveName="e-common-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/e-common/e-common">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="e-content-interface-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/e-content-interface/e-content-interface">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="e-manager-web"/>
         <property name="java-output-path" value="/e-manager-web/target/classes"/>
     </wb-module>

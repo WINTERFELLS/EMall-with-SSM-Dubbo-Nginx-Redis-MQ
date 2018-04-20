@@ -1,7 +1,0 @@
-package com.seu.cdu.service;
-
-import com.seu.edu.pojo.TbItem;
-
-public interface ItemService {
-	TbItem getItemById(long itemId);
-}

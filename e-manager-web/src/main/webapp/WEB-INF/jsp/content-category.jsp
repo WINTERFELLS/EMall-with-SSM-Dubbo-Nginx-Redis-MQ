@@ -21,7 +21,7 @@ $(function(){
             $('#contentCategoryMenu').menu('show',{
                 left: e.pageX,
                 top: e.pageY
-            });
+            }); 
         },
         onAfterEdit : function(node){
         	var _tree = $(this);

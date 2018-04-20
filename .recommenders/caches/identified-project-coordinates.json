@@ -1,1 +1,1 @@
-{}
+[[{"location":"/home/dpf/eclipse/e-mall/e-common","type":"PROJECT","hints":{"PROJECT_NAME":"e-common"}},"com.seu.edu:e-common:0.0.1"],[{"location":"/home/dpf/eclipse/e-mall/e-manager/e-manager-pojo","type":"PROJECT","hints":{"PROJECT_NAME":"e-manager-pojo"}},"com.seu.edu:e-manager-pojo:0.0.1"],[{"location":"/home/dpf/eclipse/e-mall/e-manager/e-manager-dao","type":"PROJECT","hints":{"PROJECT_NAME":"e-manager-dao"}},"com.seu.edu:e-manager-dao:0.0.1"],[{"location":"/usr/lib/jvm/java-8-oracle","type":"JRE","hints":{"EXECUTION_ENVIRONMENT":"JavaSE-1.7"}},"jre:jre:1.7.0"]]
