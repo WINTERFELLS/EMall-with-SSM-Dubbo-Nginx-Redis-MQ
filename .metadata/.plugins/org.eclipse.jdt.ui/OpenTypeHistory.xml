@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
 <typeInfo handle="=e-manager-interface/src\/main\/java&lt;com.seu.edu.service{ItemCatService.java[ItemCatService" modifiers="513" timestamp="1523417038000"/>
-<typeInfo handle="=e-content-interface/src\/main\/java&lt;com.seu.edu.content.service{ContentCategoryService.java[ContentCategoryService" modifiers="513" timestamp="1524189118000"/>
+<typeInfo handle="=e-content-interface/src\/main\/java&lt;com.seu.edu.content.service{ContentCategoryService.java[ContentCategoryService" modifiers="513" timestamp="1524206442000"/>
+<typeInfo handle="=e-content-interface/src\/main\/java&lt;com.seu.edu.content.service{ContentService.java[ContentService" modifiers="513" timestamp="1524211854000"/>
 </typeInfoHistroy>
