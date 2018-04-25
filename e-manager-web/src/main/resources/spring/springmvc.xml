@@ -27,6 +27,8 @@
 		id="contentCategoryService" />
 	<dubbo:reference interface="com.seu.edu.content.service.ContentService"
 		id="contentService" />
+	<dubbo:reference interface="com.seu.edu.search.service.SearchItemService"
+		id="searchItemService" />
 
 	<!-- 资源映射 -->
 	<mvc:resources location="/css/" mapping="/css/**"></mvc:resources>
