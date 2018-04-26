@@ -7,7 +7,7 @@ import org.apache.solr.common.SolrInputDocument;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.seu.edu.common.pojo.SerachItem;
+import com.seu.edu.common.pojo.SearchItem;
 import com.seu.edu.common.utils.EResult;
 import com.seu.edu.search.mapper.ItemMapper;
 import com.seu.edu.search.service.SearchItemService;
@@ -24,8 +24,8 @@ public class SearchItemServiceImpl implements SearchItemService {
 	@Override
 	public EResult importAllItems() {
 		try {
-			List<SerachItem> itemList = itemMapper.getItemList();
-			for (SerachItem serachItem : itemList) {
+			List<SearchItem> itemList = itemMapper.getItemList();
+			for (SearchItem serachItem : itemList) {
 				SolrInputDocument solrInputDocument = new SolrInputDocument();
 				solrInputDocument.addField("id", serachItem.getId());
 				solrInputDocument.addField("item_title", serachItem.getTitle());

@@ -2,7 +2,7 @@ package com.seu.edu.common.pojo;
 
 import java.io.Serializable;
 
-public class SerachItem implements Serializable{
+public class SearchItem implements Serializable{
 
 	private String id;
 	private String title;
@@ -45,5 +45,13 @@ public class SerachItem implements Serializable{
 	}
 	public void setCategory_name(String category_name) {
 		this.category_name = category_name;
+	}
+	
+	public String[] getImages() {
+		if(image != null && !"".equals(image)) {
+			String[] strings = image.split(",");
+			return strings;
+		}
+		return null;
 	}
 }

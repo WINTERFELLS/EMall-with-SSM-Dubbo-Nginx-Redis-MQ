@@ -9,6 +9,9 @@
         http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
 
+	<!-- 加载属性文件 -->
+	<context:property-placeholder location="classpath:conf/resource.properties" />
+
 	<context:component-scan base-package="com.seu.edu.search.controller" />
 	<mvc:annotation-driven />
 	<bean
@@ -20,5 +23,5 @@
 	<!-- 引用dubbo服务 -->
 	<dubbo:application name="e-portal-web"/>
 	<dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" />	
-<!-- 	<dubbo:reference interface="com.seu.edu.content.service.ContentService" id="contentService" /> -->
+	<dubbo:reference interface="com.seu.edu.search.service.SearchService" id="searchService" />
 </beans>
