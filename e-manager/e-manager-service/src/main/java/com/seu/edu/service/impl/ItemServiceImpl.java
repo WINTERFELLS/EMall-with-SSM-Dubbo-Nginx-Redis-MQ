@@ -3,7 +3,15 @@ package com.seu.edu.service.impl;
 import java.util.Date;
 import java.util.List;
 
+import javax.annotation.Resource;
+import javax.jms.Destination;
+import javax.jms.JMSException;
+import javax.jms.Message;
+import javax.jms.Session;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.jms.core.MessageCreator;
 import org.springframework.stereotype.Service;
 
 import com.github.pagehelper.PageHelper;
@@ -27,6 +35,11 @@ public class ItemServiceImpl implements ItemService {
 	
 	@Autowired
 	private TbItemDescMapper itemDescMapper;
+	
+	@Autowired
+	private JmsTemplate jmsTemplate;
+	@Resource
+	private Destination topicDestination;
 	
 	@Override
 	public TbItem getItemById(long itemId) {
@@ -69,7 +82,7 @@ public class ItemServiceImpl implements ItemService {
 	@Override
 	public EResult addItem(TbItem item, String desc) {
 		//生成商品id
-		Long itemId = IDUtils .genItemId();
+		final Long itemId = IDUtils .genItemId();
 		//补全item属性
 		item.setId(itemId);
 		item.setStatus((byte)1);
@@ -84,7 +97,15 @@ public class ItemServiceImpl implements ItemService {
 		itemDesc.setCreated(new Date());
 		itemDesc.setUpdated(new Date());
 		itemDescMapper.insert(itemDesc);
-		
+		//发送添加消息
+		jmsTemplate.send(topicDestination, new MessageCreator() {
+			
+			@Override
+			public Message createMessage(Session session) throws JMSException {
+				session.createTextMessage(itemId+"");
+				return null;
+			}
+		});
 		return EResult.ok();
 	}
 }

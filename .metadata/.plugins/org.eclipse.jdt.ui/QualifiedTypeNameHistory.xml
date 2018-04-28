@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.github.pagehelper.PageInfo"/>
-<fullyQualifiedTypeName name="com.seu.edu.common.pojo.EasyNodeTreeNode"/>
-<fullyQualifiedTypeName name="com.seu.edu.mapper.TbItemCatMapper"/>
-<fullyQualifiedTypeName name="com.seu.edu.pojo.TbItemCatExample"/>
-<fullyQualifiedTypeName name="com.seu.edu.pojo.TbItemExample.Criteria"/>
-<fullyQualifiedTypeName name="com.seu.edu.pojo.TbItemCatExample.Criteria"/>
-<fullyQualifiedTypeName name="com.seu.edu.pojo.TbItemCat"/>
 <fullyQualifiedTypeName name="com.seu.edu.controller.ItemCartController"/>
 <fullyQualifiedTypeName name="com.seu.edu.service.ItemCatService"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
@@ -60,4 +53,11 @@
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
 <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.alibaba.dubbo.common.logger.LoggerFactory"/>
+<fullyQualifiedTypeName name="com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache"/>
+<fullyQualifiedTypeName name="com.seu.edu.search.exception.GlobalExceptionResolver"/>
+<fullyQualifiedTypeName name="java.util.logging.Logger"/>
+<fullyQualifiedTypeName name="org.slf4j.Logger"/>
+<fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
 </qualifiedTypeNameHistroy>

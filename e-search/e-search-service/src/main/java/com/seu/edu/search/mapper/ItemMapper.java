@@ -6,4 +6,5 @@ import com.seu.edu.common.pojo.SearchItem;;
 public interface ItemMapper {
 
 	List<SearchItem> getItemList();
+	SearchItem getItemById(long id);
 }
