@@ -9,6 +9,7 @@ import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.Session;
 
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.core.MessageCreator;
@@ -16,9 +17,11 @@ import org.springframework.stereotype.Service;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.seu.edu.common.jedis.JedisClient;
 import com.seu.edu.common.pojo.EasyUIDataGridResult;
 import com.seu.edu.common.utils.EResult;
 import com.seu.edu.common.utils.IDUtils;
+import com.seu.edu.common.utils.JsonUtils;
 import com.seu.edu.mapper.TbItemDescMapper;
 import com.seu.edu.mapper.TbItemMapper;
 import com.seu.edu.pojo.TbItem;
@@ -38,11 +41,26 @@ public class ItemServiceImpl implements ItemService {
 	
 	@Autowired
 	private JmsTemplate jmsTemplate;
+
+	@Autowired
+	private JedisClient jedisClient;
+	
 	@Resource
 	private Destination topicDestination;
+
 	
 	@Override
 	public TbItem getItemById(long itemId) {
+		
+		try {
+			String json = jedisClient.get("ITEM_INFO:"+itemId+":BASE");
+			if(StringUtils.isNotBlank(json)) {
+				TbItem tbItem = JsonUtils.jsonToPojo(json, TbItem.class);
+				return tbItem;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} 
 		
 		//根据主键查询
 		//TbItem tbItem = itemMapper.selectByPrimaryKey(itemId);
@@ -55,6 +73,12 @@ public class ItemServiceImpl implements ItemService {
 		//执行查询
 		List<TbItem> list = itemMapper.selectByExample(example);
 		if(list != null && list.size() > 0) {
+			try {
+				jedisClient.set("ITEM_INFO:"+itemId+":BASE", JsonUtils.objectToJson(list.get(0)));
+				jedisClient.expire("ITEM_INFO:"+itemId+":BASE", 3600);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 			return list.get(0);
 		}
 		
@@ -107,5 +131,28 @@ public class ItemServiceImpl implements ItemService {
 			}
 		});
 		return EResult.ok();
+	}
+
+	@Override
+	public TbItemDesc getItemDescById(long itemId) {
+		try {
+			String json = jedisClient.get("ITEM_INFO:"+itemId+":BASE");
+			if(StringUtils.isNotBlank(json)) {
+				TbItemDesc itemDesc = JsonUtils.jsonToPojo(json, TbItemDesc.class);
+				return itemDesc;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} 
+		TbItemDesc itemDesc = itemDescMapper.selectByPrimaryKey(itemId);
+		
+		try {
+			jedisClient.set("ITEM_INFO:"+itemId+":BASE", JsonUtils.objectToJson(itemDesc));
+			jedisClient.expire("ITEM_INFO:"+itemId+":BASE", 3600);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return itemDesc;
 	}
 }

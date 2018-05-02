@@ -7,8 +7,13 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="e-search-web"/>
+			<item value="e-sso-web"/>
 			<item value="e-parent"/>
+			<item value="e-sso-service"/>
+			<item value="e-sso"/>
+			<item value="e-sso-interface"/>
+			<item value="e-item-web"/>
+			<item value="e-search-web"/>
 			<item value="e-search-service"/>
 			<item value="e-search"/>
 			<item value="e-search-interface"/>
@@ -74,6 +79,8 @@
 	</section>
 	<section name="MavenModuleWizardParentPage">
 		<list key="moduleName">
+			<item value="e-sso-service"/>
+			<item value="e-sso-interface"/>
 			<item value="e-search-service"/>
 			<item value="e-search-interface"/>
 			<item value="e-content-service"/>
@@ -96,6 +103,8 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/home/dpf/eclipse/e-mall/e-sso"/>
+			<item value="/home/dpf/eclipse/e-mall/e-manager/e-manager-service"/>
 			<item value="/home/dpf/eclipse/e-mall/e-search/e-search-service"/>
 			<item value="/home/dpf/eclipse/e-mall/e-parent/pom.xml"/>
 			<item value="/home/dpf/eclipse/e-mall/e-portal-web"/>

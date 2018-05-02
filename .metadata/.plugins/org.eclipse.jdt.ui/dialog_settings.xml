@@ -29,6 +29,17 @@
 		<item value="true" key="SearchInJRE"/>
 		<item value="true" key="SearchInSources"/>
 	</section>
+	<section name="org.eclipse.jdt.internal.ui.dialogs.FilteredTypesSelectionDialog">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History/&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="50" key="DIALOG_X_ORIGIN"/>
+			<item value="51" key="DIALOG_Y_ORIGIN"/>
+		</section>
+	</section>
 	<section name="NewClassWizardPage">
 		<item value="false" key="create_constructor"/>
 		<item value="true" key="create_unimplemented"/>
@@ -78,8 +89,8 @@
 		<item value="false" key="create_package_info_java"/>
 	</section>
 	<section name="completion_proposal_size">
-		<item value="238" key="contextSelector.size.y"/>
-		<item value="308" key="contextSelector.size.x"/>
+		<item value="226" key="contextSelector.size.y"/>
+		<item value="296" key="contextSelector.size.x"/>
 	</section>
 	<section name="AddGetterSetterDialog">
 		<item value="false" key="SortOrdering"/>

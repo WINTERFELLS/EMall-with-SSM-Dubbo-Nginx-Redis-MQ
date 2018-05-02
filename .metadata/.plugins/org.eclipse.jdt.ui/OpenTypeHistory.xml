@@ -6,4 +6,8 @@
 <typeInfo handle="=e-search-interface/src\/main\/java&lt;com.seu.edu.search.service{SearchService.java[SearchService" modifiers="513" timestamp="1524721696000"/>
 <typeInfo handle="=e-search-interface/src\/main\/java&lt;com.seu.edu.search.service{SearchItemService.java[SearchItemService" modifiers="513" timestamp="1524662102000"/>
 <typeInfo handle="=e-search-web/\/home\/dpf\/eclipse\/e-mall\/repository\/org\/springframework\/spring-webmvc\/4.2.4.RELEASE\/spring-webmvc-4.2.4.RELEASE.jar&lt;org.springframework.web.servlet(HandlerExceptionResolver.class[HandlerExceptionResolver" modifiers="1537" timestamp="1463390358000"/>
+<typeInfo handle="=e-search-service/\/home\/dpf\/eclipse\/e-mall\/repository\/org\/apache\/activemq\/activemq-all\/5.11.2\/activemq-all-5.11.2.jar&lt;javax.jms(MessageListener.class[MessageListener" modifiers="1537" timestamp="1463412213000"/>
+<typeInfo handle="=e-sso-interface/src\/main\/java&lt;com.seu.edu.sso.service{RegisterService.java[RegisterService" modifiers="513" timestamp="1525253518000"/>
+<typeInfo handle="=e-sso-interface/src\/main\/java&lt;com.seu.edu.sso.service{LoginService.java[LoginService" modifiers="513" timestamp="1525261865000"/>
+<typeInfo handle="=e-sso-interface/src\/main\/java&lt;com.seu.edu.sso.service{TokenService.java[TokenService" modifiers="513" timestamp="1525269493000"/>
 </typeInfoHistroy>
