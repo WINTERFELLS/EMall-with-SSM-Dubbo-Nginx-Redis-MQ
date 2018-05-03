@@ -1,6 +1,12 @@
+/home/dpf/eclipse/e-mall/e-common/src/main/java/com/seu/edu/common/pojo/SearchItem.java
 /home/dpf/eclipse/e-mall/e-common/src/main/java/com/seu/edu/common/utils/IDUtils.java
 /home/dpf/eclipse/e-mall/e-common/src/main/java/com/seu/edu/common/pojo/EasyUIDataGridResult.java
+/home/dpf/eclipse/e-mall/e-common/src/main/java/com/seu/edu/common/jedis/JedisClientPool.java
 /home/dpf/eclipse/e-mall/e-common/src/main/java/com/seu/edu/common/utils/EResult.java
 /home/dpf/eclipse/e-mall/e-common/src/main/java/com/seu/edu/common/utils/JsonUtils.java
+/home/dpf/eclipse/e-mall/e-common/src/main/java/com/seu/edu/common/pojo/SearchResult.java
+/home/dpf/eclipse/e-mall/e-common/src/main/java/com/seu/edu/common/jedis/JedisClientCluster.java
 /home/dpf/eclipse/e-mall/e-common/src/main/java/com/seu/edu/common/pojo/EasyUITreeNode.java
+/home/dpf/eclipse/e-mall/e-common/src/main/java/com/seu/edu/common/utils/CookieUtils.java
+/home/dpf/eclipse/e-mall/e-common/src/main/java/com/seu/edu/common/jedis/JedisClient.java
 /home/dpf/eclipse/e-mall/e-common/src/main/java/com/seu/edu/common/utils/FastDFSClient.java

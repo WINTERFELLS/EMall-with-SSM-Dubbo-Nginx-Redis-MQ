@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.io.Serializable"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="com.seu.edu.common.pojo.SearchResult"/>
 <fullyQualifiedTypeName name="com.seu.edu.search.SearchDao"/>
 <fullyQualifiedTypeName name="org.apache.solr.client.solrj.SolrQuery"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
 <fullyQualifiedTypeName name="com.seu.edu.search.service.SearchService"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="com.alibaba.dubbo.common.logger.LoggerFactory"/>
 <fullyQualifiedTypeName name="com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache"/>
@@ -32,9 +26,7 @@
 <fullyQualifiedTypeName name="org.springframework.jms.core.MessageCreator"/>
 <fullyQualifiedTypeName name="com.seu.edu.pojo.TbItemDesc"/>
 <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
-<fullyQualifiedTypeName name="com.seu.edu.service.ItemService"/>
 <fullyQualifiedTypeName name="com.seu.edu.item.pojo.Item"/>
-<fullyQualifiedTypeName name="com.seu.edu.pojo.TbItem"/>
 <fullyQualifiedTypeName name="com.seu.edu.sso.service.RegisterService"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="org.apache.commons.codec.digest.DigestUtils"/>
@@ -45,19 +37,27 @@
 <fullyQualifiedTypeName name="java.util.UUID"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
 <fullyQualifiedTypeName name="com.seu.edu.sso.service.LoginService"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
-<fullyQualifiedTypeName name="com.seu.edu.common.utils.CookieUtils"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
-<fullyQualifiedTypeName name="com.seu.edu.common.jedis.JedisClient"/>
-<fullyQualifiedTypeName name="org.apache.commons.lang3.StringUtils"/>
-<fullyQualifiedTypeName name="com.seu.edu.common.utils.JsonUtils"/>
-<fullyQualifiedTypeName name="com.seu.edu.pojo.TbUser"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
-<fullyQualifiedTypeName name="com.seu.edu.sso.service.TokenService"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+<fullyQualifiedTypeName name="com.seu.edu.service.ItemService"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
-<fullyQualifiedTypeName name="com.seu.edu.common.utils.EResult"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="com.seu.edu.sso.service.TokenService"/>
+<fullyQualifiedTypeName name="com.seu.edu.common.jedis.JedisClient"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+<fullyQualifiedTypeName name="com.seu.edu.mapper.TbItemMapper"/>
+<fullyQualifiedTypeName name="org.apache.commons.lang3.StringUtils"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.seu.edu.cart.service.CartService"/>
+<fullyQualifiedTypeName name="com.seu.edu.pojo.TbUser"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.seu.edu.common.utils.CookieUtils"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+<fullyQualifiedTypeName name="com.seu.edu.pojo.TbItem"/>
+<fullyQualifiedTypeName name="com.seu.edu.common.utils.JsonUtils"/>
+<fullyQualifiedTypeName name="com.seu.edu.common.utils.EResult"/>
 </qualifiedTypeNameHistroy>
