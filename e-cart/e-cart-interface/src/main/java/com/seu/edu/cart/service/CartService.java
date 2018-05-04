@@ -11,4 +11,5 @@ public interface CartService {
 	List<TbItem> getCartList(long userId);
 	EResult updateCartNum(long userId, long itemId, int num);
 	EResult deleteCartItem(long userId, long itemId);
+	EResult clearCartItem(long userId);
 }

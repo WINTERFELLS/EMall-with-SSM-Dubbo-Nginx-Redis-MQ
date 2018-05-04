@@ -9,8 +9,9 @@
 <typeInfo handle="=e-sso-interface/src\/main\/java&lt;com.seu.edu.sso.service{RegisterService.java[RegisterService" modifiers="513" timestamp="1525253518000"/>
 <typeInfo handle="=e-sso-interface/src\/main\/java&lt;com.seu.edu.sso.service{LoginService.java[LoginService" modifiers="513" timestamp="1525261865000"/>
 <typeInfo handle="=e-sso-interface/src\/main\/java&lt;com.seu.edu.sso.service{TokenService.java[TokenService" modifiers="513" timestamp="1525269493000"/>
-<typeInfo handle="=e-cart-web/\/home\/dpf\/eclipse\/e-mall\/repository\/org\/springframework\/spring-webmvc\/4.2.4.RELEASE\/spring-webmvc-4.2.4.RELEASE.jar&lt;org.springframework.web.servlet(HandlerInterceptor.class[HandlerInterceptor" modifiers="1537" timestamp="1463390358000"/>
 <typeInfo handle="=e-cart-web/\/home\/dpf\/eclipse\/e-mall\/repository\/org\/springframework\/spring-webmvc\/4.2.4.RELEASE\/spring-webmvc-4.2.4.RELEASE.jar&lt;org.springframework.web.servlet.mvc.method.annotation(ResponseBodyEmitter$Handler.class[Handler" modifiers="1544" timestamp="1463390358000"/>
 <typeInfo handle="=e-cart-web/\/usr\/lib\/jvm\/java-8-oracle\/jre\/lib\/rt.jar&lt;javax.xml.ws.handler(Handler.class[Handler" modifiers="1537" timestamp="1519629508000"/>
-<typeInfo handle="=e-cart-interface/src\/main\/java&lt;com.seu.edu.cart.service{CartService.java[CartService" modifiers="513" timestamp="1525352291000"/>
+<typeInfo handle="=e-cart-interface/src\/main\/java&lt;com.seu.edu.cart.service{CartService.java[CartService" modifiers="513" timestamp="1525355777000"/>
+<typeInfo handle="=e-cart-web/\/home\/dpf\/eclipse\/e-mall\/repository\/org\/springframework\/spring-webmvc\/4.2.4.RELEASE\/spring-webmvc-4.2.4.RELEASE.jar&lt;org.springframework.web.servlet(HandlerInterceptor.class[HandlerInterceptor" modifiers="1537" timestamp="1463390358000"/>
+<typeInfo handle="=e-order-interface/src\/main\/java&lt;com.seu.edu.order.service{OrderService.java[OrderService" modifiers="513" timestamp="1525419860000"/>
 </typeInfoHistroy>

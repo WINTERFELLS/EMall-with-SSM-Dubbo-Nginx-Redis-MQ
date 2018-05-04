@@ -85,4 +85,10 @@ public class CartServiceImpl implements CartService {
 		return EResult.ok();
 	}
 
+	@Override
+	public EResult clearCartItem(long userId) {
+		jedisClient.del(REDIS_CART_PRE + ":" + userId);
+		return null;
+	}
+
 }

@@ -7,8 +7,12 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="e-cart-web"/>
+			<item value="e-order-web"/>
 			<item value="e-parent"/>
+			<item value="e-order-service"/>
+			<item value="e-order"/>
+			<item value="e-order-interface"/>
+			<item value="e-cart-web"/>
 			<item value="e-cart-service"/>
 			<item value="e-cart"/>
 			<item value="e-cart-interface"/>
@@ -18,10 +22,6 @@
 			<item value="e-sso-interface"/>
 			<item value="e-item-web"/>
 			<item value="e-search-web"/>
-			<item value="e-search-service"/>
-			<item value="e-search"/>
-			<item value="e-search-interface"/>
-			<item value="e-content-service"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -80,6 +80,8 @@
 	</section>
 	<section name="MavenModuleWizardParentPage">
 		<list key="moduleName">
+			<item value="e-order-service"/>
+			<item value="e-order-interface"/>
 			<item value="e-cart-service"/>
 			<item value="e-cart-interface"/>
 			<item value="e-sso-service"/>
@@ -93,7 +95,6 @@
 			<item value="e-manager-service"/>
 			<item value="e-manager-interface"/>
 			<item value="e-manager-dao"/>
-			<item value="e-manager-pojo"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -106,6 +107,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/home/dpf/eclipse/e-mall/e-order"/>
 			<item value="/home/dpf/eclipse/e-mall/e-content/e-content-service"/>
 			<item value="/home/dpf/eclipse/e-mall/e-sso/e-sso-service"/>
 			<item value="/home/dpf/eclipse/e-mall/e-sso"/>

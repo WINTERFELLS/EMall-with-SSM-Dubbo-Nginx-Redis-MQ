@@ -89,8 +89,8 @@
 		<item value="false" key="create_package_info_java"/>
 	</section>
 	<section name="completion_proposal_size">
-		<item value="226" key="contextSelector.size.y"/>
-		<item value="296" key="contextSelector.size.x"/>
+		<item value="214" key="contextSelector.size.y"/>
+		<item value="284" key="contextSelector.size.x"/>
 	</section>
 	<section name="AddGetterSetterDialog">
 		<item value="false" key="SortOrdering"/>
